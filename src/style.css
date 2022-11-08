@@ -4,18 +4,28 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 64px;
+}
+.grid-two-collumns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-footer {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.responsive-img {
+  max-width: 100%;
 }
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 64px 0;
 }
 body {
   font-family: "Poppins", sans-serif;
   background-color: black;
 }
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.425)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.671)),
     url(../images/HOJEAN-3.png);
   background-size: cover;
   background-position: center;
@@ -58,15 +68,55 @@ header a {
   display: inline-block;
   text-decoration: none;
 }
+main h2 {
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  margin: 0;
+}
+main h3 {
+  color: #dd9934;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+main p {
+  color: white;
+  opacity: 0.7;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+main a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px 32px;
+  background-color: #dd9934;
+  color: white;
+  border-radius: 40px;
+  margin-top: 32px;
+  display: inline-block;
+  text-decoration: none;
+}
 footer {
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.225)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.63)),
     url(../images/HOJEAN-2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0;
+  padding: 90px 0;
 }
+
 footer h3 {
   font-weight: 700;
   font-size: 20px;
@@ -76,7 +126,6 @@ footer p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-right: 10px;
   color: white;
   opacity: 0.7;
 }
@@ -90,10 +139,11 @@ footer li {
   padding: 0;
 }
 footer a {
-  color: white;
-  opacity: 0.6;
+  color: #dd9934;
+  font-weight: bold;
+  /* opacity: 0.7; */
 }
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -111,5 +161,11 @@ footer a {
     font-size: 10px;
 
     padding: 7px 16px;
+  }
+  footer {
+    padding: 30px 30px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
