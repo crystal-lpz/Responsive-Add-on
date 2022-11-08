@@ -2,6 +2,14 @@
   max-width: 1320px;
   margin: 0 auto;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: black;
@@ -50,7 +58,39 @@ header a {
   display: inline-block;
   text-decoration: none;
 }
-
+footer {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.225)),
+    url(../images/HOJEAN-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 10px;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
+  opacity: 0.6;
+}
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
