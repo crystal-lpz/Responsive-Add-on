@@ -197,6 +197,7 @@ footer a {
   color: #dd9934;
   font-weight: bold;
   text-decoration: none;
+  opacity: 0.7;
 }
 @media (max-width: 960px) {
   header {
@@ -220,6 +221,7 @@ footer a {
   footer {
     padding: 30px 30px;
   }
+
   .grid {
     grid-template-columns: 1fr;
   }
