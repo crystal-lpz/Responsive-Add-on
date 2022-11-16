@@ -68,7 +68,7 @@ section .third-section {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #000000;
+  background-color: #050404;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.356), hwb(341 2% 92%)),
@@ -148,6 +148,7 @@ main h5 {
   line-height: 1;
   margin: 0;
 }
+
 main h6 {
   color: white;
   opacity: 0.1;
