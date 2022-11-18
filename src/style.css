@@ -20,9 +20,7 @@
 .responsive-img {
   width: 100%;
 }
-.responsive-img.album {
-  border: solid 20px #140409;
-}
+
 .responsive-img.portrait {
   filter: brightness(0.8);
 }
@@ -60,10 +58,11 @@ section {
 section.secondary-section {
   background-color: rgb(54, 11, 25);
 }
-section .third-section {
+section .side-section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 body {
@@ -71,7 +70,7 @@ body {
   background-color: #050404;
 }
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.356), hwb(341 2% 92%)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.356), rgb(20, 5, 10)),
     url(../images/HOJEAN-3.png);
   background-size: cover;
   background-position: center;
@@ -170,14 +169,16 @@ main a {
   padding: 16px 32px;
   background-color: #dd9934;
   color: white;
+  border: 2px solid #dd9934;
   border-radius: 40px;
   margin-top: 32px;
   display: inline-block;
   text-decoration: none;
 }
 main a:hover {
-  background-color: #3b0c1b;
-  color: white;
+  background-color: transparent;
+  color: #dd9934;
+  border: 2px solid #dd9934;
 }
 
 footer {
@@ -235,13 +236,26 @@ footer a {
 
     padding: 7px 16px;
   }
+
+  main h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+  main a {
+    font-size: 14px;
+    padding: 10px 21px;
+
+    display: inline-flex;
+  }
   footer {
     padding: 30px 30px;
   }
   section {
-    padding: 20px;
+    padding: 53px 20px 20px 20px;
   }
-
+  .third-section {
+    text-align: center;
+  }
   .grid {
     grid-template-columns: 1fr;
     padding: 25px;
